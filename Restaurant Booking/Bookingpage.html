@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="CSS/Sharedstyle.css">
+    <link rel="stylesheet" href="CSS/Bookingpage.css">
+    <meta name="viewport:" content="width=device-width, initial-scale=1" charset="utf-8">
+  </head>
+  <body>
+    <header>
+      <div id="headerlogoleft">
+        <img src="images/logo.png" alt="Russeau logo">
+      </div>
+      <div id="headernavright">
+        <ul>
+          <li onclick="showoverlay();showBookingRules();">Booking Rules</li>
+          <li onclick="showoverlay();showTableLayout();">Table Layout</li>
+          <li onclick="showoverlay();showThisMonthEvent();">This Month's Events</li>
+        </ul>
+      </div>
+    </header>
+
+    <section>
+      <div id="sectionleft">
+        <form action="#" method="post">
+          <label for="bookingDate">Date</label>
+          <input id="bookingDate" type="date" name="bookingDate" value="" required onchange="copyToSectionRightDate();"> <br>
+          <label for="bookingStart" onclick="copyToEndTime();">Start</label>
+          <input id="startTime" type="time" name="bookingStart" value="" min="08:00" max="18:00" required onchange="copyToEndTime();"> <br>
+
+          <p>The booking duration is <em>2 HOURS</em> by default and cannot be changed, but you do not need to consume the whole alloted time.</p>
+
+          <label for="bookingEnd">End</label>
+          <input id="endTime" type="time" name="bookingEnd" value="" readonly> <br>
+
+          <label for="tableNumber">Table no.</label>
+          <input type="number" name="tableNumber" value="" min="1" max="40" maxlength="2" required>
+          <input type="submit" name="" value="Book the table">
+        </form>
+      </div>
+      <div id="sectionright">
+        <label for="sectionRightDate">See table status for: </label>
+        <input type="date" name="sectionRightDate" value="" id="sectionRightDate">
+        <div id="tablesContainer">
+        </div>
+      </div>
+    </section>
+
+    <div id="footer">
+      <table>
+        <tr>
+          <td>The Date today is :</td>
+          <td>The time right now is :</td>
+        </tr>
+        <tr>
+          <td id="todayDate"></td>
+          <td id="nowTime"></td>
+        </tr>
+      </table>
+    </div>
+    <div id="overlaysepbg">
+    </div>
+    <div id="overlay">
+      <button id="closeoverlay" type="button" name="button" onclick="closeoverlay()"> <img src="images/closeoverlay.png" alt=""> </button>
+      <div class="overlaycontent">
+        <div id="bookingRules">
+          <h1>Restaurant Booking Rules</h1>
+          <ol>
+            <li>Occupied, Out of order table and tables alloted for walk-in customers cannot be booked.</li>
+            <li>Book the table <em>At least 6 Hours before the intended meal time</em>.</li>
+            <li> <em>2 Hours is the maximum stay within the restaurant</em>. There is no need to consume the 2 hours to give way for staff to clean and disinfect the used area.</li>
+            <li> There are only <em>2 timeslots for each mealtime(Breakfast, Lunch, Dinner)</em> to ensure that every table is thoroughly cleaned and safe to be used. <br>
+              <table>
+                <tr>
+                  <td>Breakfast</td>
+                  <td>Lunch</td>
+                  <td>Dinner</td>
+                </tr>
+                <tr>
+                  <td>(08:00 - 10:00) and (10:00 - 12:00)</td>
+                  <td>(13:00 - 15:00) and (15:00 - 17:00)</td>
+                  <td>(18:00 - 20:00) and (20:00 - 22:00)</td>
+                </tr>
+              </table>
+              <p>Please see the restaurant schedule in the front page.</p>
+             </li>
+             <li>Once you have booked succesfully, you will recieve a random code which should be shown to a staff upon entering the restaurant.</li>
+          </ol>
+        </div>
+        <div id="tableLayout">
+            <img src="" alt="">
+        </div>
+        <div id="thisMonthEvent">
+          <h3 id="currentMonth">Current Month</h3>
+        </div>
+      </div>
+    </div>
+    <script src="SCRIPTS/Bookingpage.js"></script>
+  </body>
+</html>

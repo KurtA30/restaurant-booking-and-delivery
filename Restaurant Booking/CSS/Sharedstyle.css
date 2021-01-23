@@ -1,0 +1,144 @@
+body{
+  height: 100vh;
+  margin: 0;
+  font-family: "Century Gothic";
+  overflow: hidden
+}
+
+header{
+  height: 15%;
+  background-color: #4A5D5E;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+section{
+  height: 70%;
+  background-color: #7C8181;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+#footer{
+  height: 15%;
+  background-color: #4A5D5E;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+header ul{
+  padding-top: 3.3vh;
+
+}
+
+header li{
+  color: white;
+  padding: 2vw;
+  font-size: 2.5vh;
+  display: inline;
+  list-style: none;
+}
+header li:hover{
+  background-color: #172121;
+}
+#headerlogoleft{
+  width: 30%;
+  float: left;
+  height: 100%;
+}
+#headerlogoleft img{
+  height: 100%;
+  display: block;
+  position: relative;
+  margin: auto;
+}
+#headernavright{
+  width: 70%;
+  float: left;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+#headernavright td:hover{
+  color: #35FFE6;
+}
+
+section .sectionleftright{
+  float: left;
+  width: 10%;
+  background-color: #F6F6F6;
+  opacity: 0.5
+
+}
+section .sectionleftright:hover{
+  opacity: 0.7;
+}
+section #content{
+  float: left;
+  width: 100%;
+  overflow: hidden;
+}
+section #content img{
+  width: 100%;
+  opacity: 0.7;
+}
+
+#footer table{
+  height: 100%;
+  font-size: 2vh;
+  padding-top: 1vh;
+}
+#footer td{
+  padding: 0 2vw 2vw 2vw;
+  color: #D6E4E5;
+  height: 2vh;
+  text-align: center;
+}
+
+#overlay, #overlaysepbg{
+  background-color: rgba(0,0,0,0.9);
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#overlay #closeoverlay{
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.overlaycontent{
+  width: 55vw;
+  padding: 2vw 2vh;
+  border-radius: 2vw;
+}
+
+.overlaycontent img{
+  width: 100%;
+  height: auto;
+}
+
+#Menu, #Delivery, #Jobs, #About_us{
+  text-align: center;
+  color: white;
+}
+
+#sectionfiller{
+  position: absolute;
+  top: 15vh;
+  left: 8.3%;
+  width: 83.5vw;
+  height: 70vh;
+}
+
+/*Above are front page specific css other than  header, section and footer (frontpage specific)*/

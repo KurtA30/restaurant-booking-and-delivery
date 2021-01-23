@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <title> Welcome to Russeau </title>
+  <link rel="stylesheet" type="text/css" href="CSS/Sharedstyle.css">
+  <meta name="viewport:" content="width=device-width, initial-scale=1" charset="utf-8">
+</head>
+  <body>
+    <header><!--Header-->
+      <div id="headerlogoleft">
+        <img src="images/logo.png" alt="Russeau Logo">
+      </div>
+      <!--Logo -->
+      <div id="headernavright">
+        <ul>
+            <li onclick="showoverlay();showoverlayMenu()">MENU</li>
+            <li onclick="showoverlay();showoverlayDelivery()">DELIVERY</li>
+            <li>BOOK A TABLE NOW</li>
+            <li onclick="showoverlay();showoverlayJobs()">JOBS</li>
+            <li onclick="showoverlay();showoverlayAbout_us()">ABOUT US</li>
+        </ul>
+      </div>
+      <!--menu list-->
+    </header>
+
+    <section><!--Midsection-->
+      <div class="sectionleftright" id="leftarrow" onclick="minusimageloop();changebg();">
+
+      </div>
+      <div id="content">
+        <img src="" id="bg">
+      </div>
+      <div class="sectionleftright" id="rightarrow" onclick="plusimageloop();changebg();">
+
+      </div>
+    </section>
+
+    <div id="footer"><!--Footer-->
+      <table>
+        <tr>
+          <th>LOCATION</th>
+          <th>CONTACT US</th>
+          <th>WHEN ARE WE OPEN</th>
+        </tr>
+        <tr>
+          <td>RM.548 Facility Building32 Shaw Bouleverd 1550</td>
+          <td>Email: russeaufamilyresto@gmail.com <br> Mobile: 09268412230 or 09259068894 <br> Our on-duty staff also entertain inquiries </td>
+          <td>Mon - Fri 08:00 am to 10:00 pm <br> Sat 10:00 am to 05:00pm <br> Closed on Sundays</td>
+        </tr>
+      </table>
+    </div>
+
+    <div id="overlaysepbg">
+    </div>
+    <div id="overlay">
+      <button id="closeoverlay" type="button" name="closeoverlaybutton" onclick="closeoverlay()"> <img src="images/closeoverlay.png" alt=""> </button>
+      <div class="overlaycontent">
+        <div id="Menu">
+          <img src="images/menu.jpg" alt="Russeau Menu">
+        </div>
+        <div id="Delivery">
+          <p> You can order our food over using <em>Foodpanda or GrabFood</em>. </p> <br>
+          <p> Delivery is only available is Metro Manila as this is our only branch
+          but there are plans of expansion in the near future. We hope you are happy with the food we serve!</p>
+          <p>We encourage you to dine in the restaurant by booking a table for free for your the best experience.<br>
+          We are making sure to provide a safe and clean dining even during this pandemic.</p>
+        </div>
+        <div id="Jobs">
+          <p>As of now there are <em>no open positions</em> as we had to make cuts during the pandemic.</p>
+          <p>We intend to hire additional staff as the pandemic subsides and with the go signal of the government.</p>
+          <p>For job application inquiries send your email to russeaufamilyresto@gmail.com with the subject "Restaurant Jobs"</p>
+          <h2>We appreciate your intention to be a part of our team!</h2>
+        </div>
+        <div id="About_us">
+          <p> Russeau Family restaurant is Food serving and catering startup business started in the year 2020. We serve all kinds of meat and vegetable dishes. <br>
+          Our staff could also cook requested dishes not within the menu during not busy hours. </p>
+        </div>
+      </div>
+    </div>
+
+    <div id="sectionfiller">
+    </div>
+  <script src="SCRIPTS/Frontpage.js">
+  </script>
+  </body>
+</html>
