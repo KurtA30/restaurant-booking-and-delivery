@@ -1,4 +1,5 @@
 var imageloop = 1;
+var testVar = 1;
 document.getElementById('bg').src = "images/sectionbg1.jpg";
 document.getElementById('overlaysepbg').style.backgroundImage = "url('images/overlaybg1.jpg')";
 closeoverlay();
